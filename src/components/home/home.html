@@ -1,0 +1,20 @@
+<div class="container content">
+  
+  <div class="row">  
+      <div class="col-xs-12">
+        <img v-bind:src="item.profile">
+        <h3>{{item.name}}</h3>
+        <p>{{item.biography}}</p>
+      </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <button type="button" class="btn btn-success" v-on:click="incrementCount(1)">
+        Woke
+      </button>
+      <button type="button" class="btn btn-danger" v-on:click="incrementCount(-1)">
+        Not Woke
+      </button>
+    </div>
+  </div>
+</div>

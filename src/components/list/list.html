@@ -1,0 +1,14 @@
+<div class="container content">
+  <div class="row">
+    <div class="col-xs-12">
+    <h3>Least Woke</h3>
+    <ul class="list-group">
+      <li class="list-group-item justify-content-between" v-for="item in items">
+        <img v-bind:src="item.profile" class="rounded-circle" width="32px" height="32px">
+        {{ item.name }}
+        <span class="badge badge-default badge-pill">{{ item.score }}</span>
+      </li>
+    </ul>
+    </div>
+  </div>
+</div>
